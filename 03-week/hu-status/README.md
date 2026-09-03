@@ -14,23 +14,22 @@
 ## 1. User stories worked this week
 | HU ID | Title | Status (todo/doing/done) | Evidence (PR or commit URL) |
 |---|---|---|---|
-| HU-XXX-001 | Document Patient Management bounded context in domain-map.md | done |  |
-| HU-XXX-00 | Define Patient entity and business rules in entities-and-rules.md | done |  |
-| HU-XXX-003 | Add Patient Management events to domain-events.md | done |  |
+| HU-DOM-001 | Model Patient and Clinical Care aggregates and invariants | done | [domain-model.md](./domain-model.md) |
+| HU-DOM-002 | Define versioned contracts, ownership and the MVP 1 vertical slice | done | [service-contracts.md](./service-contracts.md) |
 
 ## 2. My individual contribution
-Completed domain modeling for **Patient Management** bounded context:
+Completed domain modeling for **Patient and Clinical Care** bounded context:
 
-- Added Patient Management to `domain-map.md` with Ubiquitous Language and context relationships
-- Defined `Patient` aggregate and business rules (PAT-INV-001 to PAT-INV-010) in `entities-and-rules.md`
-- Added 6 events to `domain-events.md`: `PatientRegistered`, `PatientProfileUpdated`, `EmergencyContactRemoved`, `PatientDeactivated`
+- Defined the ubiquitous language, aggregate boundaries and clinical invariants.
+- Documented the hexagonal ports/adapters rule and the `ProcedureCompleted.v1` event shape.
+- Defined synchronous patient validation, ownership constraints and the first vertical slice.
 
 ## 3. Blockers and risks
 - No blockers identified.
 
 ## 4. Plan for next week
-- Continue with Appointments bounded context
-- Sync with team on integration points
+- Implement the contracts in the backend repositories and add unit, integration and contract tests.
+- Sync with the team on `ProcedureCompleted` consumers and idempotency behavior.
 
 ## 5. Compliance self-check
 | Practice | Status |
@@ -40,5 +39,9 @@ Completed domain modeling for **Patient Management** bounded context:
 | DDD / hexagonal boundaries | ✅ Done |
 
 ## 6. Evidence links
-- https://github.com/code-corhuila/ods-docs/tree/main/01-context
-- https://github.com/code-corhuila/ods-docs/tree/main/02-domain
+- [domain-model.md](./domain-model.md)
+- [service-contracts.md](./service-contracts.md)
+- [Week 3 Session 1 activity](../../../distribuidos/03-week/01-session/index.html)
+- [Week 3 Session 2 activity](../../../distribuidos/03-week/02-session/index.html)
+- [domain-map.md](../../../dlc-docs/02-domain/domain-map.md)
+- [user-stories.md](../../../dlc-docs/04-requirements/user-stories.md)
