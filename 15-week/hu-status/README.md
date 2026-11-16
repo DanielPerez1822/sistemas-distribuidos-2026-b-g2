@@ -7,7 +7,7 @@
 <!-- CONFIG-START - must match your profile repo (username/username) CONFIG -->
 - FULL_NAME:
 - GITHUB_USER:
-- TEAM: Di Lucca
+- TEAM:
 - SPRINT_GOAL:
 <!-- CONFIG-END -->
 
